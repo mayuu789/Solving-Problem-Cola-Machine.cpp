@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+string nama;
+   	int psnn,harga,banyak,bayar;
+cout << "Masukkan nama anda : ";
+cin >> nama;
+cout << "\n\nSelamat datang " << nama << " di All-Berries Cafe" << endl;
+cout << "Silahkan masukan pesanan Anda :\n"<< endl;
+    cout << "1. Red Berries Cola" << endl;
+    cout << "2. Blue Berries Float" << endl;
+    cout << "3. Exotic Berries Ice" << endl;
+    cout << "4. Berries Coffee" << endl;
+    cout << "5. Berries Green Tea" << endl;
+cout << "Pilih minuman yang akan anda minum sesuai nomor di atas\n";
+cout << "Nomor Berapa yang anda pesan? "; cin >> psnn;
+    switch(psnn)
+    {
+case 1: harga = 13000;
+cout<<"Anda memesan Red Berries Cola dengan harga Rp. "<<harga ;break;
+case 2: harga = 10000;
+cout<<"Anda memesan Blue Berries Float dengan harga Rp. "<<harga ;break;
+case 3: harga = 15000;
+cout<<"Anda memesan Exotic Berries Ice dengan harga Rp. "<<harga ;break;
+case 4: harga = 5000;
+cout<<"Anda memesan Berries Coffee dengan harga Rp. "<<harga ;break;
+case 5: harga = 8000;
+cout<<"Anda memesan Berries Green Tea dengan harga Rp. "<<harga ;break;
+
+default : cout << "Nomor yang anda masukkan salah, silahkan coba lagi.";break;
+
+    }
+    cout << "\nBerapa banyak yang ingin anda pesan? "; cin >> banyak;
+
+    bayar = harga * banyak;
+
+    cout << "\nJadi total belanja anda adalah Rp. " << bayar << endl;
+    cout << "\nSilahkan bayar terlebih dahulu, gunakan uang pas ya";
+    cout << "\nTunggu beberapa saat, pesanan sedang kami proses";
+    cout << "\nSilahkan tunggu di meja anda";
+
+
+
+    return 0;
+}
